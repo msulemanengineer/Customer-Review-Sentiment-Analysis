@@ -1,0 +1,43 @@
+# Customer Review Sentiment Analysis -- dependencies
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# Versions are lower bounds (>=) rather than exact pins, so the project also
+# installs cleanly on older Python versions. The versions actually used to
+# produce the results in README.md are listed at the bottom of this file and
+# in reports/metrics.json.
+
+# Data handling
+pandas>=2.0
+numpy>=1.24
+
+# Machine learning: TF-IDF, Logistic Regression, Naive Bayes, metrics
+scikit-learn>=1.3
+
+# Saving and loading the trained model + vectorizer
+joblib>=1.3
+
+# Charts (confusion matrix PNG, notebook plots)
+matplotlib>=3.7
+
+# Web user interface
+streamlit>=1.49   # needs width="stretch" on st.dataframe
+
+# Optional .env support (see .env.example). Safe to remove.
+python-dotenv>=1.0
+
+# Tests
+pytest>=7.4
+
+# -----------------------------------------------------------------------
+# Exact versions used for the results reported in README.md
+# (Python 3.14.4 on Windows 11):
+#   pandas 3.0.5, numpy 2.5.3, scikit-learn 1.9.1, joblib 1.6.0,
+#   matplotlib 3.11.2, streamlit 1.63.0, python-dotenv 1.2.3, pytest 9.1.1
+# -----------------------------------------------------------------------
+
+# Only needed if you want to OPEN AND RE-RUN notebooks/sentiment_analysis.ipynb.
+# The committed notebook already contains its outputs, so you can read it on
+# GitHub without installing any of this. Uncomment to run it yourself:
+# jupyter>=1.0

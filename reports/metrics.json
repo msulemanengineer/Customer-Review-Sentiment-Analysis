@@ -1,0 +1,200 @@
+{
+  "generated_at_utc": "2026-09-11T20:19:17+00:00",
+  "dataset": {
+    "file": "reviews.csv",
+    "usable_rows": 2982,
+    "train_rows": 2385,
+    "test_rows": 597,
+    "positive_rows": 1490,
+    "negative_rows": 1492
+  },
+  "features": {
+    "vectorizer": "TfidfVectorizer",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1,
+    "max_features": 20000,
+    "vocabulary_size": 20000
+  },
+  "hyperparameters": {
+    "Logistic Regression": {
+      "C": 10.0,
+      "max_iter": 1000,
+      "solver": "liblinear"
+    },
+    "Multinomial Naive Bayes": {
+      "alpha": 1.0
+    }
+  },
+  "primary_model": "Logistic Regression",
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.8207705192629816,
+      "precision_positive": 0.8215488215488216,
+      "recall_positive": 0.8187919463087249,
+      "f1_positive": 0.8201680672268907,
+      "precision_macro": 0.8207744107744108,
+      "recall_macro": 0.8207672106125564,
+      "f1_macro": 0.8207685077369846,
+      "roc_auc": 0.8951538686000315,
+      "confusion_matrix": {
+        "true_negative": 246,
+        "false_positive": 53,
+        "false_negative": 54,
+        "true_positive": 244
+      },
+      "cv_accuracy_mean": 0.8377358490566038,
+      "cv_accuracy_std": 0.01190362227805316,
+      "train_accuracy": 1.0
+    },
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.8107202680067002,
+      "precision_positive": 0.8073089700996677,
+      "recall_positive": 0.8154362416107382,
+      "f1_positive": 0.8113522537562604,
+      "precision_macro": 0.8107490796444284,
+      "recall_macro": 0.8107281542501852,
+      "f1_macro": 0.810718143684853,
+      "roc_auc": 0.8938519898543242,
+      "confusion_matrix": {
+        "true_negative": 241,
+        "false_positive": 58,
+        "false_negative": 55,
+        "true_positive": 243
+      },
+      "cv_accuracy_mean": 0.8343815513626834,
+      "cv_accuracy_std": 0.007844145464934905,
+      "train_accuracy": 0.9941299790356394
+    }
+  },
+  "top_positive_terms": [
+    [
+      "great",
+      10.489424972324294
+    ],
+    [
+      "good",
+      8.144974453379142
+    ],
+    [
+      "love",
+      5.119456217930768
+    ],
+    [
+      "nice",
+      5.10933178299233
+    ],
+    [
+      "amazing",
+      4.980736309182027
+    ],
+    [
+      "excellent",
+      4.82805897026261
+    ],
+    [
+      "and",
+      4.528125544624411
+    ],
+    [
+      "delicious",
+      4.2814974974865
+    ],
+    [
+      "wonderful",
+      4.239092209351061
+    ],
+    [
+      "well",
+      4.168379986266881
+    ],
+    [
+      "awesome",
+      4.01620542740985
+    ],
+    [
+      "best",
+      3.967202067394658
+    ],
+    [
+      "the best",
+      3.957614434652611
+    ],
+    [
+      "works",
+      3.8962358361296294
+    ],
+    [
+      "beautiful",
+      3.6870706684928685
+    ]
+  ],
+  "top_negative_terms": [
+    [
+      "not",
+      -9.330073111256294
+    ],
+    [
+      "bad",
+      -7.428819703207014
+    ],
+    [
+      "poor",
+      -5.13940043264168
+    ],
+    [
+      "terrible",
+      -4.775174970741827
+    ],
+    [
+      "worst",
+      -4.694712911678515
+    ],
+    [
+      "don",
+      -4.262694177479608
+    ],
+    [
+      "disappointment",
+      -3.5864254338514727
+    ],
+    [
+      "stupid",
+      -3.4825987513786494
+    ],
+    [
+      "not good",
+      -3.4537741439007226
+    ],
+    [
+      "awful",
+      -3.4012607864409787
+    ],
+    [
+      "then",
+      -3.361207366307152
+    ],
+    [
+      "the worst",
+      -3.3184708269254637
+    ],
+    [
+      "disappointing",
+      -3.241256008128266
+    ],
+    [
+      "minutes",
+      -3.232402184863759
+    ],
+    [
+      "disappointed",
+      -3.011328012741475
+    ]
+  ],
+  "versions": {
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  }
+}
